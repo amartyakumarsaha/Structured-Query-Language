@@ -1,9 +1,9 @@
 create database Amartya_DB;
 use Amartya_DB;
 show tables;
-show procedure status;
+show procedure status; ---------- Used to show status of a table.
 drop table customer;
-drop procedure create_table_procedure_order; 
+drop procedure create_table_procedure_order; --------- Used to drop a procedure.
 desc customer;
 desc product;
 desc orders;
