@@ -19,6 +19,7 @@ desc employee;
 
 create table logs(action varchar(100),time datetime,status varchar(30));
 desc logs;
+
 ################# log procedure insert ##############################
 delimiter //
 create procedure log_procedure(in msg char(100),in action_time datetime,in state int)
@@ -32,6 +33,8 @@ begin
     insert into logs(action,time,status) values(msg,action_time,flag);    
 end //
 delimiter ;
+
+
 ######### Procedure to insert data in employee table #############
 delimiter //
 create procedure insert_into_employee(in empid int,in name char(20),in position varchar(20),in join_date datetime)
@@ -51,6 +54,8 @@ begin
 	call log_procedure(lmsg,current_timestamp(),status);
 end //
 delimiter ;
+
+
 
 call insert_into_employee(11176,'Suraj Singh','SDE','2012-08-29 09:00:00');
 call insert_into_employee(11258,'Atul Rana','PM','2019-02-10 12:02:12');
