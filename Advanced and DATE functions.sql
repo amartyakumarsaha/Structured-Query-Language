@@ -56,3 +56,6 @@ select monthname(current_timestamp()); #returns month naame
 select now();
 select quarter(current_timestamp()); #returns the quarter in which the date lies
 SELECT DATE_FORMAT(current_date(), "%M %d, %Y"); 
+select localtime();
+select localtimestamp();
+select last_day(localtime());
