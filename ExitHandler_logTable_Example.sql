@@ -1,17 +1,17 @@
 use Amartya_DB;
 
-#####################################################################################
-##					DESCRIPTION	ABOUT THIS WORKSHEET						       ##
-#####################################################################################
-##       Table 1= 'employee'												       ##
-##       Table 2= 'logs'														   ##
-##       proedure 1= 'insert_into_employee'                                       ##
-##       procedure 2= 'log_procedure'                                               ##
-##       PURPOSE= Every time 'insert_into_employee' is called the status of that   ##
-##				call status will be stored into logs table. An exit handler is     ##
-##				declared to avoid duplicate data insertion in 'employee' table.    ##
-##																				   ##
-#####################################################################################
+###################################################################################################
+##					DESCRIPTION	ABOUT THIS WORKS                         ##
+###################################################################################################
+##       Table 1= 'employee'									 ##
+##       Table 2= 'logs'								         ##
+##       proedure 1= 'insert_into_employee'                                                      ##
+##       procedure 2= 'log_procedure'                                                            ##
+##       PURPOSE = Every time 'insert_into_employee' is called the status of that                ##
+##				call status will be stored into logs table. An exit handler is   ##
+##				declared to avoid duplicate data insertion in 'employee' table.  ##
+##												 ##
+###################################################################################################
 
 
 create table employee(emp_id int primary key,name char(20),role varchar(20),joining_date datetime);
