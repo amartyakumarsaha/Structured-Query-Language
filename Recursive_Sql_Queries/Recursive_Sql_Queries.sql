@@ -13,7 +13,7 @@ SELECT * FROM CTE_name;
 
 WITH RECURSIVE NUMBERS AS
     (
-    SELECT 1 AS N   //  First iteration.
+    SELECT 1 AS N   --  First iteration.
     UNION ALL
     SELECT N + 1 FROM NUMBERS WHERE N < 10
     )
